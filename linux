@@ -1,0 +1,12 @@
+Turn on the SSH service and make sure it starts automatically on reboot.
+# service sshd start
+# chkconfig sshd on
+
+
+
+
+The SSH service is configured using the "/etc/ssh/sshd_config" file. Configuration changes have to be followed by a restart of the service.
+# service sshd restart
+# # or
+# service sshd reload
+
